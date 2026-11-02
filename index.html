@@ -162,7 +162,6 @@
             width: 22px;
             height: 22px;
             opacity: 0.7;
-            filter: url(#tint-accent);
         }
 
         .palette-btn {
@@ -284,13 +283,6 @@
 <body>
     <canvas id="grid" aria-hidden="true"></canvas>
 
-    <!-- Recolours the green logo to --accent (#7cf5c4) while keeping the black P -->
-    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
-        <filter id="tint-accent" color-interpolation-filters="sRGB">
-            <feColorMatrix type="matrix" values="0 0.486 0 0 0  0 0.961 0 0 0  0 0.769 0 0 0  0 0 0 1 0"/>
-        </filter>
-    </svg>
-
     <main>
         <p class="prompt"><span>~/pausak.com</span> $ whoami<i class="cursor"></i></p>
         <h1>Aleks Pausak</h1>
@@ -299,7 +291,7 @@
         <ul id="links"></ul>
 
         <footer>
-            <img src="/assets/images/logo.png" alt="Pausak logo">
+            <img src="/assets/images/favicon.png" alt="Pausak logo">
             <button class="palette-btn" id="open-palette" type="button"><span id="mod-key">⌘</span>K to navigate</button>
         </footer>
     </main>
