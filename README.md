@@ -1,18 +1,18 @@
-# Pausak.com Website Template
+# Pausak.com
 
-Welcome to the personal website of Aleks Pausak. This project is a retro-themed web experience that emulates old-school MS-DOS and Unix terminal interfaces.
+Personal website of Aleks Pausak. A single, dependency-free `index.html`.
 
 ## Features
 
-- **MS-DOS & Unix Terminal Modes**: Switch between classic DOS and Terminal UIs.
-- **Boot Sequence Simulation**: Authentic retro boot sequences before accessing the terminal.
-- **Command-Line Interaction**: Supports `dir/ls` and `clear` commands.
-- **Directory Listing**: Displays clickable links in both MS-DOS and Unix file formats.
-- **Mobile/Tablet Friendly**: Automatically shows directory listings on smaller screens.
-- **Retro UI Elements**: Styled buttons, terminal flicker effects, and overlay menus.
-- **Overlay Menu**: Retro-styled overlay with description section and navigation links.
+- **Interactive dot grid**: a canvas background that reacts to the cursor (static when `prefers-reduced-motion` is set).
+- **Command palette**: `⌘K` / `Ctrl+K` (or `/`) to search and open links.
+- **Keyboard shortcuts**: `G` GitHub, `L` LinkedIn, `X` X, `E` Email.
 
-## Commands
+## Development
 
-- `dir` (MS-DOS) / `ls` (Unix): Displays a list of links.
-- `clear`: Clears the screen and reruns the boot sequence.
+```sh
+npm install
+npm run dev
+```
+
+Links live in the `links` array in `index.html`.
